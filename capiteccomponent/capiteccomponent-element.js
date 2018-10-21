@@ -68,13 +68,13 @@ class CapiteccomponentElement extends PolymerElement {
  
   <h3>The current share price for Capitec:</h3>       
   <p class="alt"> [[Symbol]] </p> <b>R</b><span>[[Price]]</span>
-  <p>Enter an amount to calculate the value of shares you can buy</p> 
+  <p>How much money would you like to invest?</p> 
   <input value="{{amount::change}}" />
   <button on-click="clicked">Calculate</button>
   <template is="dom-if" if="{{Quantity}}">
-  <p>You should be able to buy:</p>
+  <p>This is how many shares you will get:</p>
   <h2> [[Quantity]] </h2>
-  <p>Capitec shares with <b>R</b>{{amount}}</p>
+  <p>Capitec shares for <b>R</b>{{amount}}</p>
   </template>
     `;
   }
