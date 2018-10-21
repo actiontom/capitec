@@ -57,18 +57,24 @@ class CapiteccomponentElement extends PolymerElement {
       font-size: 16px;
       margin: 4px 2px;
       cursor: pointer;
-  }     
+      width: 100%;
+  }  
+  input {
+    width: 100%;
+    font-size: 16px;
+  } 
   </style> 
   <img src="https://vbank.capitecbank.co.za/Web/Content/images/logo_215x33.svg">     
  
   <h3>The current share price for Capitec:</h3>       
-  <p class="alt"> [[Symbol]] </p> <b>R</b> <span>[[Price]]</span>
+  <p class="alt"> [[Symbol]] </p> <b>R</b><span>[[Price]]</span>
   <p>Enter an amount to calculate the value of shares you can buy</p> 
   <input value="{{amount::change}}" />
   <button on-click="clicked">Calculate</button>
   <template is="dom-if" if="{{Quantity}}">
   <p>You should be able to buy:</p>
   <h2> [[Quantity]] </h2>
+  <p>Capitec shares with <b>R</b>{{amount}}</p>
   </template>
     `;
   }
