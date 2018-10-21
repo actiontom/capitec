@@ -1,6 +1,6 @@
 # \<capiteccomponent-element\>
 
-This element will get the latest Capitec share price from a public finacial data service provider and prompt the user to enter an amount whereby it&#39;ll display the calculated number of shares
+This element will get the latest Capitec share price from a public finacial data service provider. It will prompt the user to enter an amount whereby it&#39;ll display the calculated number of shares
 
 ## Install the Polymer-CLI
 
